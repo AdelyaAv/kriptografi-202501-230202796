@@ -36,9 +36,139 @@ Cipher klasik adalah metode lama dalam kriptografi yang digunakan untuk menyembu
 
 **aritmetika modular**, yaitu cara menghitung dengan sistem sisa bagi. Misalnya, dalam sistem alfabet yang terdiri dari 26 huruf, angka 27 akan dianggap sama dengan 1 karena 27 mod 26 = 1. Konsep ini digunakan untuk membantu proses penggantian huruf dalam cipher. Misalnya, saat kita ingin menggeser huruf dengan jumlah tertentu, kita bisa memakai perhitungan modular agar hasilnya tetap berada dalam jangkauan alfabet. Dalam kriptografi modern seperti RSA, prinsip aritmetika modular juga digunakan untuk menjaga keamanan data dengan perhitungan angka yang jauh lebih besar dan rumit.
 
+Sejarah Kriptografi :
+
+Kriptografi berasal dari bahasa Yunani, yaitu kryptos yang berarti “rahasia” dan graphia yang berarti “tulisan”. Jadi, kriptografi bisa diartikan sebagai seni atau teknik menulis pesan rahasia agar hanya orang yang berhak yang bisa membacanya.
+
+Perkembangan kriptografi terbagi menjadi beberapa zaman:
+
+Masa Kuno (Sandi Klasik)
+
+Pada masa ini, orang menggunakan cara sederhana untuk menyembunyikan pesan.
+
+Contohnya:
+
+Caesar Cipher (Sandi Caesar) yang menggeser huruf alfabet beberapa langkah, misalnya huruf A diganti jadi D.
+
+Vigenère Cipher, sandi yang menggunakan kunci berupa kata untuk menyandikan pesan.
+
+Masa Perang Dunia
+
+Kriptografi digunakan untuk strategi militer.
+
+Contoh terkenalnya adalah mesin Enigma yang dipakai Jerman pada Perang Dunia II untuk mengenkripsi pesan rahasia.
+
+Mesin ini akhirnya berhasil dipecahkan oleh Alan Turing dan timnya di Inggris, yang kemudian menjadi cikal bakal komputer modern.
+
+Masa Modern (Era Digital)
+
+Kriptografi berkembang pesat seiring kemajuan komputer.
+
+Sistem sandi berubah menjadi algoritma matematis yang sangat rumit.
+
+Contohnya: RSA, AES, dan SHA yang digunakan untuk mengamankan data di internet, transaksi online, dan komunikasi digital.
+
+Prinsip CIA dalam Keamanan Informasi :
+
+Dalam dunia keamanan data, dikenal prinsip utama yang disebut CIA Triad, yaitu:
+
+Confidentiality (Kerahasiaan)
+Artinya data harus dijaga agar hanya orang yang berhak yang bisa mengaksesnya.
+➤ Contohnya: pesan WhatsApp yang terenkripsi end-to-end supaya tidak bisa disadap.
+
+Integrity (Keutuhan Data)
+Data harus tetap asli dan tidak diubah tanpa izin.
+➤ Contohnya: tanda tangan digital atau checksum yang memastikan file tidak diubah saat dikirim.
+
+Availability (Ketersediaan)
+Data dan sistem harus selalu tersedia bagi pengguna yang berhak kapan pun dibutuhkan.
+➤ Contohnya: server website harus tetap aktif agar bisa diakses pengguna kapan saja.
+
 ---
 
-## 7. Jawaban Pertanyaan
+## 3. Alat dan Bahan
+Jawab : Alat & Bahan Kriptografi )
+1) Untuk memahami konsep dasar / klasik
+Kertas, pulpen, penggaris — untuk enkripsi manual (Caesar, Vigenère, transposition).
+Kartu/cerdas (index cards) — buat kunci, tabel substitusi, latihan one-time pad.
+Whiteboard / spidol — visualisasi matriks, transformasi.
+
+2) Perangkat lunak pembelajaran & eksperimen
+Python + library: cryptography, PyCryptodome, hashlib — untuk implementasi cipher, hash, KDF.
+SageMath atau SageCell — untuk teori bilangan, kurva eliptik, dan eksperimen kriptografi matematis.
+OpenSSL — praktek TLS, pembuatan sertifikat, enkripsi simetris/asimetris.
+GnuPG (GPG) — enkripsi email/file (OpenPGP), tanda tangan digital.
+VeraCrypt / LUKS — enkripsi disk untuk praktek sistem file aman.
+Wireshark — menganalisis protokol, melihat handshake TLS (untuk tujuan edukasi).
+Hashcat / John the Ripper — pemahaman serangan password / cracking (gunakan secara etis dan legal).
+VirtualBox / Docker — lingkungan terisolasi untuk eksperimen.
+
+3) Perangkat keras & token keamanan
+Raspberry Pi (atau mini-PC) — buat server kripto, HSM ringan, atau laboratorium PKI.
+USB security tokens / YubiKey — praktek autentikasi berbasis kunci publik.
+Smartcard / reader — latihan PKI dan token berbasis kartu.
+TPM (Trusted Platform Module) — jika perlu eksperimen dengan secure boot / penyimpanan kunci.
+Hardware Security Module (HSM) — untuk penelitian/produksi jika tersedia (mahal).
+
+4) Bahan untuk pengujian & evaluasi
+Dataset password (publik/anonimisasi) atau wordlists — untuk latihan kekuatan password (hanya dataset legal/public).
+File sample (dokumen, gambar) — untuk menguji enkripsi, steganografi.
+Skenario lab / tugas — contoh: membangun CA, TLS server-client, tanda tangan digital.
+
+5) Literatur & referensi praktis
+Buku pengantar (contoh yang biasa direkomendasikan): Applied Cryptography (Schneier), Introduction to Modern Cryptography (Katz & Lindell).
+Dokumentasi resmi: OpenSSL, GnuPG, libs yang dipakai.
+RFC penting: TLS, PKCS, X.509 (untuk konfigurasi jaringan/protokol).
+
+6) Praktik keamanan & etika
+Aturan etika & izin — jangan mencoba cracking atau penyerangan tanpa izin eksplisit.
+Lingkungan terisolasi (VM, jaringan lab) — hindari eksperimen di jaringan produksi.
+Backup & kunci recovery plan — saat bereksperimen dengan enkripsi nyata.
+
+---
+
+## 4. Langkah Percobaan
+Jawab :Langkah-langkah percobaan kriptografI
+  > Langkah-langkah Percobaan**
+
+1. **Menentukan pesan asli (plaintext)**
+   Tulis pesan sederhana, misalnya:
+
+   > “BELAJAR KRIPTOGRAFI ITU SERU”
+
+2. **Menentukan kunci pergeseran (key)**
+   Pilih angka untuk pergeseran huruf, misalnya:
+
+   > Kunci = 3 (berarti setiap huruf digeser 3 huruf ke kanan dalam alfabet)
+
+3. **Melakukan proses enkripsi (penyandian)**
+   Geser setiap huruf sesuai kunci.
+   Contoh:
+
+   * B → E
+   * E → H
+   * L → O
+     Jadi pesan baru menjadi:
+
+   > “EHOAODM NULSWRJUDI LWX VHUX”
+
+4. **Mencatat hasil enkripsi**
+   Tulis hasil pesan rahasia (ciphertext) di kertas atau di aplikasi yang digunakan.
+
+5. **Melakukan proses dekripsi (membuka sandi)**
+   Gunakan kunci yang sama (3) untuk menggeser huruf ke arah kiri agar pesan kembali ke bentuk aslinya.
+
+   > “EHOAODM NULSWRJUDI LWX VHUX” → “BELAJAR KRIPTOGRAFI ITU SERU”
+
+6. **Membandingkan hasilnya**
+   Pastikan pesan setelah didekripsi sama dengan pesan awal (plaintext). Jika sama, berarti proses kriptografinya berhasil.
+
+7. **Menyimpulkan hasil percobaan**
+   Tuliskan bahwa kriptografi bekerja dengan cara **mengubah pesan menjadi bentuk lain yang tidak mudah dibaca**, dan hanya bisa dikembalikan dengan **kunci yang tepat**.
+
+---
+
+## 7. Jawaban Pertanyaan Quizz
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
 - Pertanyaan 1: Siapa tokoh yang dianggap sebagai bapak kriptografi modern?
 - Jawab : Tokoh yang dianggap sebagai bapak kriptografi modern adalah Claude Shannon. Ia adalah seorang ilmuwan Amerika yang dikenal sebagai pelopor teori informasi dan kriptografi modern. Pada tahun 1949, Shannon menulis sebuah makalah berjudul "Communication Theory of Secrecy Systems", yang menjelaskan dasar-dasar matematis tentang bagaimana sistem enkripsi bekerja dan bagaimana keamanan sebuah cipher bisa diukur secara ilmiah.
