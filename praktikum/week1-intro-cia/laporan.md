@@ -25,6 +25,8 @@ Adapun informasi diri dibagikan melalui kanal harus diautentikasi kebenarannya. 
 – Non repudiasi
 Terakhir yaitu non repudiasi atau anti penyangkalan. Non repudiasi adalah upaya yang perlu dilakukan untuk mencegah terjadinya penyangkalan pengiriman informasi yang dilakukan pihak pengirim. Repudiasi atau penyangkalan terhadap pesan pihak yang ditunjuk. 
 
+---
+
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
@@ -32,22 +34,7 @@ Jawab : **Teori Relevan**
 
 Cipher klasik adalah metode lama dalam kriptografi yang digunakan untuk menyembunyikan isi pesan supaya tidak mudah dibaca oleh orang lain. Cara kerjanya cukup sederhana, yaitu dengan mengganti huruf-huruf pada teks asli (*plaintext*) menjadi huruf lain sesuai pola tertentu sehingga membentuk teks sandi (*ciphertext*). Contohnya adalah **Caesar Cipher**, yang mengganti setiap huruf dengan huruf lain yang berjarak beberapa langkah di alfabet. Misalnya, jika pergeserannya tiga huruf, maka huruf A akan menjadi D, huruf B menjadi E, dan seterusnya. Meskipun tergolong sederhana dan mudah dipecahkan dengan teknologi sekarang, cipher klasik ini menjadi dasar dari banyak teknik enkripsi modern yang lebih rumit.
 
-Selain itu, ada juga konsep penting yang disebut **aritmetika modular**, yaitu cara menghitung dengan sistem sisa bagi. Misalnya, dalam sistem alfabet yang terdiri dari 26 huruf, angka 27 akan dianggap sama dengan 1 karena 27 mod 26 = 1. Konsep ini digunakan untuk membantu proses penggantian huruf dalam cipher. Misalnya, saat kita ingin menggeser huruf dengan jumlah tertentu, kita bisa memakai perhitungan modular agar hasilnya tetap berada dalam jangkauan alfabet. Dalam kriptografi modern seperti RSA, prinsip aritmetika modular juga digunakan untuk menjaga keamanan data dengan perhitungan angka yang jauh lebih besar dan rumit.
----
-
-
-## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
-- Berikan tabel atau ringkasan hasil uji jika diperlukan.  
-- Jelaskan apakah hasil sesuai ekspektasi.  
-- Bahas error (jika ada) dan solusinya. 
-
-Hasil eksekusi program Caesar Cipher:
-
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+**aritmetika modular**, yaitu cara menghitung dengan sistem sisa bagi. Misalnya, dalam sistem alfabet yang terdiri dari 26 huruf, angka 27 akan dianggap sama dengan 1 karena 27 mod 26 = 1. Konsep ini digunakan untuk membantu proses penggantian huruf dalam cipher. Misalnya, saat kita ingin menggeser huruf dengan jumlah tertentu, kita bisa memakai perhitungan modular agar hasilnya tetap berada dalam jangkauan alfabet. Dalam kriptografi modern seperti RSA, prinsip aritmetika modular juga digunakan untuk menjaga keamanan data dengan perhitungan angka yang jauh lebih besar dan rumit.
 
 ---
 
@@ -73,6 +60,8 @@ Cipher klasik mudah dipecahkan dengan teknik analisis frekuensi atau percobaan m
 
 Penggunaan Kunci:
 Kriptografi klasik umumnya menggunakan satu kunci yang sama untuk enkripsi dan dekripsi (disebut kunci simetris). Sedangkan kriptografi modern memiliki dua jenis sistem: simetris dan asimetris (kunci publik), di mana enkripsi dan dekripsi dilakukan dengan kunci yang berbeda.
+
+---
 
 
 ## 10. Commit Log
