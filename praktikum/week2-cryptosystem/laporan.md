@@ -8,15 +8,14 @@ Kelas: [5IKRB]
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-Jawab : (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-1.Mengidentifikasi komponen dasar kriptosistem (plaintext, ciphertext, kunci, algoritma).
-2.Menggambarkan proses enkripsi dan dekripsi sederhana.
-3.Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 
-## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Mengidentifikasi komponen dasar kriptosistem (plaintext, ciphertext, kunci, algoritma).
+Menggambarkan proses enkripsi dan dekripsi sederhana.
+Mengklasifikasikan jenis kriptosistem (simetris dan asimetris).
+
+## 2. Dasar Teori  
+Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  
 Jawab : kriptosistem adalah sebuah sistem lengkap yang digunakan untuk mengamankan data. Anggap saja ini seperti seperangkat alat untuk mengirim pesan rahasia. Agar sistem ini bisa berjalan, ada beberapa komponen penting yang harus ada:
 
 Plaintext: Ini adalah pesan asli yang ingin kamu kirim, dalam bentuk yang bisa dibaca dan dimengerti oleh siapa saja. Contohnya, teks "SERANG FAJAR".
