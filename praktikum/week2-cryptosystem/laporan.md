@@ -138,7 +138,7 @@ if __name__ == "__main__":
     print("Plaintext :", message)
     print("Ciphertext:", enc)
     print("Decrypted :", dec)
----
+```
 )
 
 ---
@@ -153,7 +153,6 @@ Hasil eksekusi program Caesar Cipher:
 
 ![Hasil Eksekusi](screenshots/Diagram_Cryptosystem .png)
 ![Hasil Input](screenshots/hasil_eksekusi.jpg)
-)
 
 ---
 
