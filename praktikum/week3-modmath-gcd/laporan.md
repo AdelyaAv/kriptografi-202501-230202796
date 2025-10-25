@@ -36,8 +36,8 @@ Contoh dari cipher klasik antara lain adalah Caesar Cipher, yang menggeser setia
 3. Mengimplementasikan algoritma Euclidean buat nyari nilai GCD.
 4. Mengimplementasikan dengan Extended Euclidean Algorithm (egcd) dan bikin juga fungsi invers modular (modinv).
 5. Tambahkan simulasi sederhana logaritma diskrit (discrete_log) untuk nyari nilai pangkat dalam sistem modular.
-6.Jalankan programnya (python src/modular_math.py) buat menguji semua fungsi yang udah dibuat.
-7. Terakhir, screenshot hasil eksekusi dan simpan di folder screenshots/ sebagai bukti hasil praktikum.
+6. Jalankan programnya (python src/modular_math.py) buat menguji semua fungsi yang udah dibuat.
+7.  Terakhir, screenshot hasil eksekusi dan simpan di folder screenshots/ sebagai bukti hasil praktikum.
 
 ---
 
