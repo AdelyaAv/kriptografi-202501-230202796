@@ -1,6 +1,6 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: X  
-Topik: [judul praktikum]  
+Topik: [04 Entropy & Unicity Distance (Evaluasi Kekuatan Kunci dan Brute Force)]  
 Nama: [Nama Mahasiswa]  
 NIM: [NIM Mahasiswa]  
 Kelas: [Kelas]  
