@@ -8,7 +8,6 @@ Kelas: [5IKRB]
 ---
 
 ## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
 
 Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 
@@ -16,8 +15,7 @@ Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:
 2. Menentukan bilangan prima dan menghitung GCD (Greatest Common Divisor).
 3. Menerapkan logaritma diskrit sederhana dalam simulasi kriptografi.
 
-## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
+## 2. Dasar Teori  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 
 Cipher klasik adalah metode penyandian pesan yang digunakan pada masa sebelum adanya komputer modern. Dalam sistem ini, pesan asli atau plaintext diubah menjadi bentuk sandi atau ciphertext dengan menggunakan aturan tertentu yang bersifat manual dan sederhana. Cipher klasik biasanya bekerja dengan cara mengganti huruf-huruf dalam teks (substitution) atau menukar posisi huruf-hurufnya (transposition). 
@@ -33,11 +31,13 @@ Contoh dari cipher klasik antara lain adalah Caesar Cipher, yang menggeser setia
 ---
 
 ## 4. Langkah Percobaan
-(Tuliskan langkah yang dilakukan sesuai instruksi.  
-Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
-2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+1. Membuat struktur folder praktikum/week3-modmath-gcd/src/ dan file modular_math.py.
+2. Tambahkan fungsi-fungsi aritmetika modular seperti mod_add, mod_sub, mod_mul, dan mod_exp.
+3. Mengimplementasikan algoritma Euclidean buat nyari nilai GCD.
+4. Mengimplementasikan dengan Extended Euclidean Algorithm (egcd) dan bikin juga fungsi invers modular (modinv).
+5. Tambahkan simulasi sederhana logaritma diskrit (discrete_log) untuk nyari nilai pangkat dalam sistem modular.
+6. Jalankan programnya (python src/modular_math.py) buat menguji semua fungsi yang udah dibuat.
+7.  Terakhir, screenshot hasil eksekusi dan simpan di folder screenshots/ sebagai bukti hasil praktikum.
 
 ---
 
@@ -101,7 +101,7 @@ Hasil eksekusi program Caesar Cipher:
 ---
 
 ## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
+(Jawab pertanyaan diskusi yang diberikan pada modul. 
 - Pertanyaan 1: Apa peran aritmetika modular dalam kriptografi modern?
 Aritmetika modular memiliki peran yang sangat penting dalam kriptografi modern karena menjadi dasar dalam banyak algoritma enkripsi dan dekripsi. Dalam aritmetika modular, operasi matematika seperti penjumlahan, pengurangan, perkalian, dan perpangkatan dilakukan dengan sisa hasil bagi terhadap suatu bilangan tertentu yang disebut *modulus*. Konsep ini digunakan untuk menciptakan sistem kriptografi yang aman karena hasil operasinya sulit dibalik tanpa mengetahui kunci tertentu. Misalnya, pada algoritma RSA, aritmetika modular digunakan untuk proses enkripsi dan dekripsi dengan operasi perpangkatan besar terhadap modulus hasil perkalian dua bilangan prima besar. Hal ini membuat sistem kriptografi modern sangat bergantung pada kesulitan memecahkan persoalan matematika seperti faktorisasi bilangan prima atau logaritma diskrit, yang semuanya berakar pada aritmetika modular.
 
@@ -119,7 +119,6 @@ Kesulitannya muncul karena operasi perpangkatan modular mudah dilakukan, tetapi 
 
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
 Kesimpulannya, modular math atau aritmetika modular merupakan dasar penting dalam kriptografi modern karena memungkinkan operasi matematika dilakukan dalam sistem bilangan terbatas (*modulus*). Konsep ini digunakan untuk menjaga keamanan dan efisiensi dalam proses enkripsi serta dekripsi. GCD (Greatest Common Divisor) berperan dalam menentukan hubungan antara dua bilangan, misalnya untuk memastikan pembentukan kunci yang valid dalam algoritma RSA. Bilangan prima menjadi elemen penting karena digunakan untuk membangun kunci yang sulit dipecahkan, terutama dalam sistem kunci publik. Sementara itu, logaritma diskrit adalah masalah matematika yang sulit diselesaikan dan menjadi dasar keamanan pada algoritma seperti Diffie-Hellman dan ElGamal. Secara keseluruhan, keempat konsep ini saling berkaitan dan membentuk fondasi kuat bagi keamanan kriptografi modern.
 
 
