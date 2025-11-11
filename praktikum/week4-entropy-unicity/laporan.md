@@ -1,9 +1,9 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [04 Entropy & Unicity Distance (Evaluasi Kekuatan Kunci dan Brute Force)]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 4
+Topik: [Entropy & Unicity Distance (Evaluasi Kekuatan Kunci dan Brute Force]  
+Nama: [Adelya Ayu Virnanda]  
+NIM: [230202796]  
+Kelas: [5IKRB]  
 
 ---
 
