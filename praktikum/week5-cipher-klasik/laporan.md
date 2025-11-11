@@ -1,28 +1,30 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 5
+Topik: [05 Cipher Klasik (Caesar, Vigenère, Transposisi)]  
+Nama: [Adelya Ayu Virnanda]  
+NIM: [230202796]  
+Kelas: [5IKRB]  
 
 ---
 
 ## 1. Tujuan
 (Tuliskan tujuan pembelajaran praktikum sesuai modul.)
+1. Menerapkan algoritma Caesar Cipher untuk enkripsi dan dekripsi teks.
+2. Menerapkan algoritma Vigenère Cipher dengan variasi kunci.
+3. Mengimplementasikan algoritma transposisi sederhana.
+4. Menjelaskan kelemahan algoritma kriptografi klasik.
 
----
 
 ## 2. Dasar Teori
 (Ringkas teori relevan (cukup 2–3 paragraf).  
 Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
-
----
+Cipher klasik adalah metode enkripsi yang digunakan sebelum era komputer, di mana pesan hanya diproses berbasis huruf alfabet dan menggunakan teknik seperti substitusi atau transposisi untuk menyamarkan isi pesan.
+ Metode ini termasuk dalam kriptografi kunci-simetri, artinya kunci yang digunakan untuk mengenkripsi dan mendekripsi pesan adalah sama. Contoh cipher klasik antara lain Caesar Cipher, Vigenere Cipher, dan Playfair Cipher, yang masing-masing memiliki cara berbeda dalam mengganti atau mengatur urutan huruf. Meskipun cipher klasik saat ini dianggap tidak aman untuk digunakan secara luas, namun tetap penting sebagai dasar pemahaman kriptografi dan menjadi fondasi bagi pengembangan algoritma modern.
 
 ## 3. Alat dan Bahan
 (- Python 3.x  
 - Visual Studio Code / editor lain  
 - Git dan akun GitHub  
-- Library tambahan (misalnya pycryptodome, jika diperlukan)  )
 
 ---
 
@@ -56,24 +58,28 @@ def encrypt(text, key):
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
+![Hasil Eksekusi](screenshots/caesar.png)
+![Hasil Input](screenshots/transpose.png)
+![Hasil Output](screenshots/vigenere.png)
 )
 
 ---
 
 ## 7. Jawaban Pertanyaan
 (Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
-)
+- Pertanyaan 1: Apa kelemahan utama algoritma Caesar Cipher dan Vigenère Cipher?
+Algoritma Caesar Cipher dan Vigenère Cipher memiliki kelemahan utama berupa tingkat keamanan yang rendah karena mudah dipecahkan dengan serangan brute force dan analisis frekuensi. Caesar Cipher hanya memiliki 25 kemungkinan kunci, sehingga sangat rentan terhadap serangan brute force dan pola penggeseran yang tetap memudahkan analisis frekuensi huruf. Sementara itu, Vigenère Cipher memang lebih kuat karena menggunakan kunci yang berulang, tetapi jika panjang kunci lebih pendek dari pesan, maka pola kunci akan terulang dan dapat dianalisis dengan metode Kasiski atau analisis frekuensi. Kedua algoritma ini tidak cocok untuk melindungi data sensitif di era modern karena mudah dipecahkan dan tidak mampu menahan serangan kriptanalisis yang lebih canggih.
+- Pertanyaan 2: Mengapa cipher klasik mudah diserang dengan analisis frekuensi?
+Cipher klasik mudah diserang dengan analisis frekuensi karena metode enkripsi yang digunakan (seperti Caesar Cipher dan Vigenère Cipher) hanya mengubah atau mengganti huruf tanpa mengubah pola distribusi frekuensi huruf asli dalam bahasa tertentu. Dalam setiap bahasa, ada huruf-huruf tertentu yang muncul lebih sering, misalnya huruf 'A' dan 'N' di Bahasa Indonesia atau 'E' di Bahasa Inggris. Serangan analisis frekuensi memanfaatkan pola ini dengan menghitung frekuensi kemunculan huruf dalam ciphertext, lalu membandingkannya dengan tabel frekuensi huruf pada bahasa aslinya. Dengan demikian, penyerang dapat menebak huruf mana yang kemungkinan besar mewakili huruf yang paling sering muncul di plaintext, sehingga memudahkan proses pemecahan kunci dan dekripsi pesan.
+- Pertanyaan 3: Bandingkan kelebihan dan kelemahan cipher substitusi vs transposisi.
+Cipher substitusi dan transposisi memiliki kelebihan serta kelemahan yang berbeda. Cipher substitusi mengganti setiap huruf atau simbol dalam plaintext dengan huruf atau simbol lain berdasarkan kunci tertentu, sehingga kelebihannya adalah proses enkripsi dan dekripsi yang relatif sederhana serta mudah diimplementasikan secara manual atau komputer. Namun, kelemahannya adalah tetap mempertahankan pola frekuensi huruf asli, sehingga sangat rentan terhadap serangan analisis frekuensi.[2][5][6]
+
+Sementara itu, cipher transposisi mengacak urutan huruf dalam plaintext tanpa mengubah identitas hurufnya, sehingga kelebihannya adalah tidak mengubah distribusi frekuensi huruf, membuat analisis frekuensi menjadi kurang efektif. Namun, kelemahannya adalah jika struktur atau pola pengacakan tidak cukup rumit, pesan masih bisa ditebak atau dipecahkan dengan metode lain seperti anagram atau serangan known plaintext. Dengan demikian, cipher transposisi lebih aman dari analisis frekuensi, tetapi bisa lebih rentan terhadap serangan lain jika kunci atau metode pengacakan tidak kuat.
 ---
 
 ## 8. Kesimpulan
 (Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
-
----
+Cipher klasik seperti Caesar, Vigenère, dan Transposisi memiliki karakteristik masing-masing yang membedakan kelebihan dan kelemahannya. Caesar Cipher dan Vigenère Cipher termasuk dalam kategori substitusi, yaitu mengganti huruf dengan huruf lain berdasarkan kunci tertentu, sehingga mudah diimplementasikan tetapi rentan terhadap analisis frekuensi karena pola distribusi huruf asli tetap terlihat. Sementara itu, cipher transposisi mengacak urutan huruf tanpa mengubah identitasnya, sehingga lebih tahan terhadap analisis frekuensi, tetapi bisa lebih mudah dipecahkan jika pola pengacakan tidak rumit. Secara umum, cipher klasik memiliki kelebihan dalam kesederhanaan dan kemudahan proses enkripsi-dekripsi, namun kelemahannya adalah tingkat keamanan yang rendah terhadap serangan modern seperti analisis frekuensi dan brute force, sehingga tidak cocok untuk melindungi data sensitif di era digital.
 
 ## 9. Daftar Pustaka
 (Cantumkan referensi yang digunakan.  
@@ -88,8 +94,8 @@ Contoh:
 Contoh:
 ```
 commit abc12345
-Author: Nama Mahasiswa <email>
-Date:   2025-09-20
+Author: Adelya Ayu Virnanda <adelyavirnanda@gmail.com>
+Date:   2025-11-11
 
     week2-cryptosystem: implementasi Caesar Cipher dan laporan )
 ```
