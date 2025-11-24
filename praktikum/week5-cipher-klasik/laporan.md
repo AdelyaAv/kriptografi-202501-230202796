@@ -25,7 +25,7 @@ Cipher klasik adalah metode enkripsi yang digunakan sebelum era komputer, di man
  ---
 
 ## 3. Alat dan Bahan
-(- Python 3.x  
+- Python 3.x  
 - Visual Studio Code / editor lain  
 - Git dan akun GitHub  
 
@@ -34,9 +34,9 @@ Cipher klasik adalah metode enkripsi yang digunakan sebelum era komputer, di man
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `caesar.py, transpose.py, vigenere.py` di folder `praktikum/week5-cipher-klasik/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python caesar.py, python transpose.py, python vigenere.py`.)
 
 ---
 
@@ -44,6 +44,7 @@ Contoh format:
 (Salin kode program utama yang dibuat atau dimodifikasi.  
 Gunakan blok kode:
 
+1. caesar.py
 ```python
 def caesar_encrypt(plaintext, key):
     result = ""
@@ -68,6 +69,7 @@ print("Ciphertext:", enc)
 print("Decrypted :", dec)
 ```
 
+2. transpose.py
 ```python
 def transpose_encrypt(plaintext, key=5):
     ciphertext = [''] * key
@@ -102,6 +104,7 @@ print("Ciphertext:", enc)
 print("Decrypted :", dec)
 ```
 
+3. vigenere.py
 ```python
 def vigenere_encrypt(plaintext, key):
     result = []
@@ -187,8 +190,6 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
 commit abc12345
 Author: Adelya Ayu Virnanda <adelyavirnanda@gmail.com>

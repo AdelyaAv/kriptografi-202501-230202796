@@ -93,9 +93,9 @@ Kekurangan: Prosesnya lebih lambat dibandingkan kriptografi simetris.
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `simple_crypto.py` di folder `praktikum/week2-cryptosystem/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python simple_crypto.py`.)
 
 ---
 
@@ -143,7 +143,7 @@ if __name__ == "__main__":
 ---
 
 ## 6. Hasil dan Pembahasan
-(- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
+- Lampirkan screenshot hasil eksekusi program (taruh di folder `screenshots/`).  
 - Berikan tabel atau ringkasan hasil uji jika diperlukan.  
 - Jelaskan apakah hasil sesuai ekspektasi.  
 - Bahas error (jika ada) dan solusinya. 
@@ -229,6 +229,7 @@ Jawab : Distribusi kunci menjadi masalah utama dalam kriptografi simetris karena
 
 
 )
+
 ---
 
 ## 8. Kesimpulan
@@ -246,8 +247,6 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
 commit abc12345
 Author: Adelya Ayu Virnanda <adelyavirnanda@gmail.com>

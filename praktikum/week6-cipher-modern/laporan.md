@@ -35,9 +35,9 @@ Secara keseluruhan, teori dasar cipher modern bertumpu pada konsep matematika ko
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `aes.py, des.py, rsa.py` di folder `praktikum/week6-cipher-modern/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python aes.py, python des.py, python rsa.py`.)
 
 ---
 
@@ -45,6 +45,7 @@ Contoh format:
 (Salin kode program utama yang dibuat atau dimodifikasi.  
 Gunakan blok kode:
 
+1. aes.py
 ```python
 from Crypto.Cipher import AES
 from Crypto.Random import get_random_bytes
@@ -63,6 +64,7 @@ decrypted = cipher_dec.decrypt(ciphertext)
 print("Decrypted:", decrypted.decode())
 ```
 
+2. des.py
 ```python
 from Crypto.Cipher import DES
 from Crypto.Random import get_random_bytes
@@ -79,6 +81,7 @@ decrypted = decipher.decrypt(ciphertext)
 print("Decrypted:", decrypted)
 ```
 
+3. rsa.py
 ```python
 from Crypto.PublicKey import RSA
 from Crypto.Cipher import PKCS1_OAEP
@@ -118,8 +121,7 @@ Hasil eksekusi program Caesar Cipher:
 
 ---
 
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
+## 7. Jawaban Pertanyaan 
 - Pertanyaan 1: Apa perbedaan mendasar antara DES, AES, dan RSA dalam hal kunci dan keamanan?
 Perbedaan mendasar antara DES, AES, dan RSA terletak pada jenis algoritma, penggunaan kunci, serta tingkat keamanannya. DES (Data Encryption Standard) dan AES (Advanced Encryption Standard) termasuk dalam kategori kriptografi simetris, di mana proses enkripsi dan dekripsi menggunakan kunci yang sama. Perbedaannya, DES menggunakan kunci sepanjang 56 bit yang kini dianggap tidak aman karena dapat dipecahkan dengan serangan brute force, sedangkan AES menggunakan kunci 128, 192, atau 256 bit yang jauh lebih kuat dan menjadi standar enkripsi modern yang diakui oleh NIST. Di sisi lain, RSA (Rivest–Shamir–Adleman) merupakan algoritma kriptografi asimetris, yang menggunakan dua kunci berbeda, yaitu kunci publik untuk enkripsi dan kunci privat untuk dekripsi. RSA memiliki panjang kunci jauh lebih besar, umumnya 2048 bit atau lebih, dan meskipun lebih aman untuk pertukaran kunci atau tanda tangan digital, algoritma ini lebih lambat dibanding AES. Dalam praktiknya, RSA sering digunakan untuk mengamankan pertukaran kunci AES, sedangkan AES digunakan untuk mengenkripsi data utama karena efisiensinya. Dengan demikian, AES saat ini menjadi standar utama untuk enkripsi data, RSA digunakan untuk pengamanan kunci dan otentikasi, sementara DES sudah dianggap usang dan jarang dipakai karena kelemahannya.
 
@@ -149,7 +151,7 @@ Contoh:
 ## 10. Commit Log
 ```
 commit 9503301ada2acc4a1a1c55bd7999f019eb9a36c9 (HEAD -> main, origin/main, origin/HEAD)
-Author: AdelyaAv <adelya@gmail.com>
+Author: Adelya Ayu Virnanda <adelyavirnanda@gmail.com>
 Date:   Tue Nov 11 13:53:00 2025 +0700
 
     week6-cipher-modern

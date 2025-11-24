@@ -25,7 +25,7 @@ Modular aritmetika adalah sistem operasi hitung yang bekerja dengan nilai sisa p
 ---
 
 ## 3. Alat dan Bahan
-(- Python 3.x  
+- Python 3.x  
 - Visual Studio Code / editor lain  
 - Git dan akun GitHub  
 
@@ -35,9 +35,9 @@ Modular aritmetika adalah sistem operasi hitung yang bekerja dengan nilai sisa p
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `entropy_unicity.py` di folder `praktikum/week4-entropy-unicity/src/`.
 2. Menyalin kode program dari panduan praktikum.
-3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
+3. Menjalankan program dengan perintah `python entropy_unicity.py`.)
 
 ---
 
@@ -104,8 +104,6 @@ Entropy & Unicity Distance (Evaluasi Kekuatan Kunci dan Brute Force)
 
 Kesimpulan, entropy dan unicity distance berperan penting dalam mengevaluasi kekuatan kunci terhadap serangan brute force. Entropy menunjukkan tingkat keacakan dan ketidakpastian kunci—semakin tinggi entropinya, semakin sulit kunci ditebak. Sementara itu, unicity distance menentukan seberapa banyak ciphertext yang dibutuhkan agar kunci dapat dipecahkan secara unik. Kombinasi keduanya membantu menilai seberapa kuat sistem kriptografi menahan upaya penyerangan, sehingga semakin tinggi entropi dan semakin besar unicity distance, maka semakin aman cipher dari brute force maupun analisis kriptografi.
 
-
-
 ---
 
 ## 9. Daftar Pustaka
@@ -117,8 +115,6 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
 commit abc12345
 Author: Adelya Ayu Virnanda <adelyavirnanda@gmail.com>
