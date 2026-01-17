@@ -133,12 +133,10 @@ Contoh:
 ---
 
 ## 10. Commit Log
-(Tuliskan bukti commit Git yang relevan.  
-Contoh:
 ```
-commit abc12345
-Author: Adelya Ayu Virnanda <adelyavirnanda@gmail.com>
-Date:   1/17/2026
+commit 39619ebcb5fd89bb4973b5a09aa23ac1ef342d21 (HEAD -> main, origin/main, origin/HEAD)
+Author: AdelyaAv <adelya@gmail.com>
+Date:   Sat Jan 17 16:22:10 2026 +0700
 
-    week2-cryptosystem: implementasi Caesar Cipher dan laporan )
+    week11-secret-sharing
 ```
