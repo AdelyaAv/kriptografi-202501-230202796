@@ -116,7 +116,7 @@ Contoh:
 ## 10. Commit Log
 ```
 commit 0586267cd287d3ddd366502e2d99e154ef8adc6f (HEAD -> main, origin/main, origin/HEAD)
-Author: AdelyaAv <adelya@gmail.com>
+Author: Adelya Ayu Virnanda <adelyavirnanda@gmail.com>
 Date:   Mon Nov 24 10:19:19 2025 +0700
 
     week7-diffie-hellman
