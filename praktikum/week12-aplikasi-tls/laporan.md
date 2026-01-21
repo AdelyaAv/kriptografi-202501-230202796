@@ -1,20 +1,26 @@
 # Laporan Praktikum Kriptografi
-Minggu ke-: X  
-Topik: [judul praktikum]  
-Nama: [Nama Mahasiswa]  
-NIM: [NIM Mahasiswa]  
-Kelas: [Kelas]  
+Minggu ke-: 12
+Topik: Aplikasi TLS & E-commerce  
+Nama: [Adelya Ayu Virnanda]  
+NIM: 230202796
+Kelas: 5IKRB
 
 ---
 
-## 1. Tujuan
-(Tuliskan tujuan pembelajaran praktikum sesuai modul.)
-
+## Tujuan Pembelajaran
+Setelah mengikuti praktikum ini, mahasiswa diharapkan mampu:  
+1. Menganalisis penggunaan kriptografi pada **email** dan **SSL/TLS**.  
+2. Menjelaskan enkripsi dalam transaksi **e-commerce**.  
+3. Mengevaluasi isu **etika & privasi** dalam penggunaan kriptografi di kehidupan sehari-hari
 ---
 
 ## 2. Dasar Teori
-(Ringkas teori relevan (cukup 2–3 paragraf).  
-Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
+Transport Layer Security (TLS) adalah protokol keamanan yang digunakan untuk melindungi komunikasi data melalui jaringan internet dengan menjamin kerahasiaan, integritas, dan autentikasi data. TLS bekerja dengan mengenkripsi data yang dikirim antara klien dan server sehingga informasi tidak dapat dibaca atau dimanipulasi oleh pihak yang tidak berwenang. Dalam implementasinya, TLS menggunakan mekanisme handshake untuk pertukaran kunci dan sertifikat digital sebagai bukti keaslian server.
+
+E-commerce merupakan aktivitas jual beli barang dan jasa yang dilakukan secara elektronik melalui internet. Sistem e-commerce melibatkan berbagai komponen seperti website atau aplikasi, sistem pembayaran, basis data, dan mekanisme keamanan. Karena transaksi e-commerce melibatkan data sensitif seperti informasi pribadi dan pembayaran, keamanan menjadi aspek yang sangat penting.
+
+TLS memiliki peran penting dalam aplikasi e-commerce karena berfungsi mengamankan transaksi online melalui penggunaan protokol HTTPS. Dengan TLS, data pelanggan seperti informasi login dan pembayaran dapat terlindungi dari ancaman keamanan, sehingga meningkatkan kepercayaan pengguna dan mendukung kelancaran transaksi e-commerce secara aman dan terpercaya.
+
 
 ---
 
@@ -29,7 +35,7 @@ Contoh: definisi cipher klasik, konsep modular aritmetika, dll.  )
 ## 4. Langkah Percobaan
 (Tuliskan langkah yang dilakukan sesuai instruksi.  
 Contoh format:
-1. Membuat file `caesar_cipher.py` di folder `praktikum/week2-cryptosystem/src/`.
+1. Membuat file `Aplikasi TLS & E-commerce.py` di folder `praktikum/week12-E-commerce/src/`
 2. Menyalin kode program dari panduan praktikum.
 3. Menjalankan program dengan perintah `python caesar_cipher.py`.)
 
@@ -56,22 +62,24 @@ def encrypt(text, key):
 
 Hasil eksekusi program Caesar Cipher:
 
-![Hasil Eksekusi](screenshots/output.png)
-![Hasil Input](screenshots/input.png)
-![Hasil Output](screenshots/output.png)
-)
+![Hasil Eksekusi](screenshots/hasil.png)
 
 ---
 
-## 7. Jawaban Pertanyaan
-(Jawab pertanyaan diskusi yang diberikan pada modul.  
-- Pertanyaan 1: …  
-- Pertanyaan 2: …  
+## 7. Jawaban Pertanyaan 
+ 1. Apa perbedaan utama antara HTTP dan HTTPS? 
+ Jawab : Perbedaan utama antara HTTP dan HTTPS terletak pada aspek keamanannya. HTTP mengirimkan data dalam bentuk teks biasa (plain text) sehingga mudah disadap atau dimanipulasi oleh pihak lain. Sementara itu, HTTPS menggunakan protokol TLS untuk mengenkripsi data yang dikirim antara klien dan server, sehingga komunikasi menjadi lebih aman, terlindungi, dan dapat memverifikasi identitas server.
+
+2. Mengapa sertifikat digital menjadi penting dalam komunikasi TLS? 
+Jawab : Sertifikat digital penting dalam komunikasi TLS karena berfungsi untuk memverifikasi identitas pihak yang berkomunikasi, khususnya server. Sertifikat digital yang dikeluarkan oleh Certificate Authority (CA) memastikan bahwa pengguna benar-benar terhubung ke server yang sah, bukan server palsu. Selain itu, sertifikat digital digunakan dalam proses pertukaran kunci enkripsi yang aman. 
+
+3. Bagaimana kriptografi mendukung privasi dalam komunikasi digital, tetapi sekaligus menimbulkan tantangan hukum dan etika? 
+Jawab : Sertifikat digital penting dalam komunikasi TLS karena berfungsi untuk memverifikasi identitas pihak yang berkomunikasi, khususnya server. Sertifikat digital yang dikeluarkan oleh Certificate Authority (CA) memastikan bahwa pengguna benar-benar terhubung ke server yang sah, bukan server palsu. Selain itu, sertifikat digital digunakan dalam proses pertukaran kunci enkripsi yang aman.
 )
 ---
 
 ## 8. Kesimpulan
-(Tuliskan kesimpulan singkat (2–3 kalimat) berdasarkan percobaan.  )
+Kesimpulannya, penerapan HTTPS dengan dukungan TLS dan sertifikat digital sangat penting untuk menjaga keamanan komunikasi digital, khususnya dalam pertukaran data melalui internet. Kriptografi berperan besar dalam melindungi privasi dan mencegah penyalahgunaan data, namun di sisi lain juga menimbulkan tantangan hukum dan etika terkait akses informasi oleh pihak berwenang. Oleh karena itu, diperlukan keseimbangan antara perlindungan privasi pengguna dan kepentingan hukum serta keamanan agar pemanfaatan teknologi keamanan digital dapat berjalan secara bertanggung jawab dan efektif.
 
 ---
 
