@@ -1,7 +1,7 @@
 # Laporan Praktikum Kriptografi
 Minggu ke-: 12
 Topik: Aplikasi TLS & E-commerce  
-Nama: [Adelya Ayu Virnanda]  
+Nama: Adelya Ayu Virnanda  
 NIM: 230202796
 Kelas: 5IKRB
 
